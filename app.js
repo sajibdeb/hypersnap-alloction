@@ -221,8 +221,10 @@ function updateEstimator(allocationStr) {
     const tokenPrice = fdv / TOTAL_SUPPLY;
     const value = amount * tokenPrice;
 
+    const tierMap = { '$50M': 'tier-silver', '$100M': 'tier-gold', '$1B': 'tier-diamond' };
+    const tierClass = tierMap[label] || '';
     const row = document.createElement('div');
-    row.className = 'est-row' + (highlight ? ' highlight' : '');
+    row.className = 'est-row' + (highlight ? ' highlight' : '') + (tierClass ? ' ' + tierClass : '');
     row.innerHTML = `
       <span class="est-fdv">${label}</span>
       <span class="est-price">${fmtTokenPrice(tokenPrice)}</span>

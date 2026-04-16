@@ -830,6 +830,41 @@ body {
   color: var(--gold);
 }
 
+/* Tier colors for value cell — realism per FDV milestone */
+.est-row.tier-silver .est-value-cell {
+  background: linear-gradient(135deg, #e8e8e8 0%, #b8b8b8 40%, #f5f5f5 60%, #9a9a9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 12px rgba(220, 220, 220, 0.25);
+}
+
+.est-row.tier-gold .est-value-cell {
+  background: linear-gradient(135deg, #fff3a0 0%, #f5c242 45%, #ffe27a 65%, #c9971f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 14px rgba(245, 194, 66, 0.35);
+}
+
+.est-row.tier-diamond .est-value-cell {
+  background: linear-gradient(135deg, #ffd1ec 0%, #ff7ac6 25%, #e0aaff 50%, #b5e8ff 75%, #ff9ed8 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 16px rgba(255, 122, 198, 0.45);
+  animation: diamondShine 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes diamondShine {
+  from { background-position: 0% 50%; }
+  to   { background-position: 100% 50%; }
+}
+
+.est-row.tier-silver  { background: linear-gradient(90deg, transparent, rgba(200, 200, 200, 0.05), transparent); }
+.est-row.tier-diamond { background: linear-gradient(90deg, transparent, rgba(255, 122, 198, 0.06), transparent); }
+
 .est-disclaimer {
   font-size: 0.68rem;
   color: var(--text3);
