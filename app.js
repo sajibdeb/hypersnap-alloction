@@ -10,7 +10,7 @@
 const $ = id => document.getElementById(id);
 
 /* ── Token estimation constants ─────────────────────────── */
-const TOTAL_SUPPLY = 1_000_000_000; // 1 Billion HSNAP
+const TOTAL_SUPPLY = 2_000_000_000; // 2 Billion HSNAP
 const FDV_LEVELS = [
   { label: '$100K', fdv: 100_000, highlight: false },
   { label: '$1M', fdv: 1_000_000, highlight: false },

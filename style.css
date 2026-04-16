@@ -866,7 +866,7 @@ body {
 .est-row.tier-diamond { background: linear-gradient(90deg, transparent, rgba(255, 122, 198, 0.06), transparent); }
 
 .est-disclaimer {
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   color: var(--text3);
   text-align: center;
 }
