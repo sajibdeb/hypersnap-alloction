@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Env files (keep secrets safe)
+.env
+.env.local
+
+# Vercel build output (not needed for static)
+.vercel/
