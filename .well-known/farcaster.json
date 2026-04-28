@@ -9,11 +9,18 @@
     "name": "Allocation Checker",
     "iconUrl": "https://hypersnap-alloction.vercel.app/og.png",
     "homeUrl": "https://hypersnap-alloction.vercel.app/",
+    "imageUrl": "https://hypersnap-alloction.vercel.app/og.png",
+    "buttonTitle": "🪂 Check My Allocation",
     "splashImageUrl": "https://hypersnap-alloction.vercel.app/og.png",
     "splashBackgroundColor": "#09090f",
     "subtitle": "Farcaster Hypersnap Rewards",
     "description": "Check your Farcaster Hypersnap retroactive genesis airdrop allocation and estimated token value at 7 different FDV levels.",
     "primaryCategory": "finance",
-    "tags": ["farcaster", "airdrop", "hypersnap", "allocation", "rewards"]
+    "tags": ["farcaster", "airdrop", "hypersnap", "allocation", "rewards"],
+    "heroImageUrl": "https://hypersnap-alloction.vercel.app/og.png",
+    "tagline": "Check your Hypersnap airdrop",
+    "ogTitle": "Allocation Checker — Hypersnap Rewards",
+    "ogDescription": "Check your Farcaster Hypersnap retroactive genesis airdrop allocation.",
+    "ogImageUrl": "https://hypersnap-alloction.vercel.app/og.png"
   }
 }
