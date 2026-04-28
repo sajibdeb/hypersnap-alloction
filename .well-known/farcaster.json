@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjIzNTE4NywidHlwZSI6ImF1dGgiLCJrZXkiOiIweDJkQWE1NWE5NzI5NGJiODkwQTA0NTJENjJiQ0RhQzVFRmMwRkNGYjIifQ",
+    "payload": "eyJkb21haW4iOiJoeXBlcnNuYXAtYWxsb2N0aW9uLnZlcmNlbC5hcHAifQ",
+    "signature": "XzD0Kia3raJtlL8eWiqe16l9TTxg77wfU1Y/DNj8ODcH8R2vjc/lRKNa1AWBSTjmA7j6gqhoMybV+eH+ucqwRBs="
+  },
   "miniapp": {
     "version": "1",
     "name": "Allocation Checker",
