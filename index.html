@@ -37,6 +37,21 @@
        Replace YOUR_VERCEL_URL with your deployed domain after deploying to Vercel.
        Example: allocation-checker.vercel.app
   ── -->
+    <meta name="fc:miniapp" content='{
+    "version": "1",
+    "imageUrl": "https://hypersnap-alloction.vercel.app/og.png",
+    "button": {
+      "title": "🪂 Check My Allocation",
+      "action": {
+        "type": "launch_miniapp",
+        "url": "https://hypersnap-alloction.vercel.app/",
+        "name": "Allocation Checker",
+        "splashImageUrl": "https://hypersnap-alloction.vercel.app/og.png",
+        "splashBackgroundColor": "#09090f"
+      }
+    }
+  }' />
+    <!-- Backwards-compat: older clients still read fc:frame -->
     <meta name="fc:frame" content='{
     "version": "next",
     "imageUrl": "https://hypersnap-alloction.vercel.app/og.png",
@@ -305,6 +320,18 @@
     </main>
 
     <script src="app.js"></script>
+
+    <!-- ── Farcaster Mini App SDK ── -->
+    <script type="module">
+        import { sdk } from 'https://esm.sh/@farcaster/miniapp-sdk';
+        try {
+            await sdk.actions.ready();
+            window.farcasterSdk = sdk;
+        } catch (e) {
+            // Not running inside a Farcaster client — safe to ignore
+            console.log('Farcaster SDK not available (running outside Warpcast):', e?.message);
+        }
+    </script>
 </body>
 
 </html>
